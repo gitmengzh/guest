@@ -22,6 +22,11 @@ __它包含功能:__
   * Django 1.11.x :https://www.djangoproject.com/ (目前只在1.11.x 版本下运行通过)
   * Requests : http://www.python-requests.org/en/master/ (运行/function_tests目录下的接口用例需要)
   * django-bootstrap3 : https://github.com/dyve/django-bootstrap3
+  
+ ##运行环境更新：
+	*django 2.0.5
+	*django-bootstrap3   10.0.1
+	*python 3.6
 
 
 ### 问题

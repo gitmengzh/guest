@@ -32,5 +32,6 @@ urlpatterns = [
     url(r'^sign_index/(?P<event_id>[0-9]+)/$', views.sign_index),
     url(r'^sign_index2/(?P<event_id>[0-9]+)/$', views.sign_index2),
     url(r'^sign_index_action/(?P<event_id>[0-9]+)/$', views.sign_index_action),
-    url(r'^api/', include('sign.urls', namespace="sign")),
+    #url(r'^api/', include('sign.urls', namespace="sign")),
+    url(r'^api/', include(('sign.urls','sign'),namespace="sign")),#解决了Django Specifying a namespace in include() without providing an app_name
 ]

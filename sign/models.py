@@ -17,7 +17,8 @@ class Event(models.Model):
 
 # 嘉宾
 class Guest(models.Model):
-    event = models.ForeignKey(Event)            # 关联发布会id
+    #event = models.ForeignKey(Event)            # 关联发布会id
+    event = models.ForeignKey(Event,on_delete=models.CASCADE)   #解决了__missing 1 required positional argument :'on_delete
     realname = models.CharField(max_length=64)  # 姓名
     phone = models.CharField(max_length=16)     # 手机号
     email = models.EmailField()                 # 邮箱
